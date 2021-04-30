@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <wheel></wheel>
+  <betting-field></betting-field>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BettingField from "./components/BettingField";
+import Wheel from "./components/Wheel";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BettingField,
+    Wheel
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  background: #131313;
+  color: #FFFFFF;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 </style>
