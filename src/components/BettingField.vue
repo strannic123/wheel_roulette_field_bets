@@ -6,7 +6,6 @@
           <button
               class="betting_number_zero"
               :style="numbers[0].color"
-
           >
             {{numbers[0].num}}
           </button>
